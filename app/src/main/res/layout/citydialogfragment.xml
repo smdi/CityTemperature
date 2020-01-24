@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_gravity="center"
+        android:id="@+id/profileTab"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/spinnerfr"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        />
+
+        <ScrollView
+            android:id="@+id/datascroll"
+            android:fillViewport="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/imageViewRelay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/cityimagefr"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp" />
+
+                        </RelativeLayout>
+
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_view"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageViewRelay"
+                            >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_marginTop="2dp"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/pin"
+                                        android:background="@drawable/pin"
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp" />
+
+                                    <TextView
+                                        android:padding="5dp"
+                                        android:id="@+id/citynamefr"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left"
+                                        android:layout_marginLeft="5dp"
+                                        android:textAlignment="center"
+                                        android:text="City Name"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="2dp"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/fan"
+                                        android:background="@drawable/fan"
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp" />
+
+                                    <TextView
+                                        android:padding="5dp"
+                                        android:id="@+id/windspeed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left"
+                                        android:layout_marginLeft="5dp"
+                                        android:textAlignment="center"
+                                        android:text="Wind speed"
+                                        android:textColor="#999999"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/temperature"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="10dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="18dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="200"
+                                            />
+
+                                        <TextView
+                                            android:textSize="10dp"
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="1dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="1dp"
+                                            android:textStyle="bold"
+                                            android:textColor="#ACACAC"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Temperature"
+                                            android:layout_marginBottom="5dp"
+                                            />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/pressure"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="10dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="18dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="129.5"
+                                            />
+
+                                        <TextView
+                                            android:textSize="10dp"
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="1dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="1dp"
+                                            android:textStyle="bold"
+                                            android:textColor="#ACACAC"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Pressure"
+                                            android:layout_marginBottom="5dp"
+                                            />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/humidity"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="10dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="18dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="40"
+                                            />
+
+                                        <TextView
+                                            android:textSize="10dp"
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="1dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="1dp"
+                                            android:textStyle="bold"
+                                            android:textColor="#ACACAC"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Humidity"
+                                            android:layout_marginBottom="5dp"
+                                            />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
